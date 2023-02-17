@@ -4,39 +4,134 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Álvaro Gómez</title>
+	<style>
+		body{
+			background-color: lightblue;
+			margin-left: 25%;
+			margin-right: 25%;
+
+		}
+		.titulo{
+			color: darkblack;
+			text-align: center;
+		}
+		.img-profile{
+			border:4px solid #AAA1B3 ;
+			width: 200px;
+			height: 200px;
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+			border-radius: 50%;
+		}
+
+		.h2{
+			color: darkred;
+			text-align: center;
+		}
+
+		.h4{
+			text-align: center;
+		}
+
+		.p{
+			text-align: center;
+		}
+		.png{
+		  	display: grid;
+ 			grid-template-columns: auto auto auto auto;
+			gap: 10px;
+   			padding: 10px;
+   			width: 60px;
+			height: 60px;
+			align-content: center;
+			border:4px solid #AAA1B3 ;
+
+		}
+
+		.ico{
+			border:4px solid #AAA1B3 ;
+			width: 60px;
+			height: 60px;
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+			border-radius: 50%;
+
+		}
+		.bloque{
+			width: auto;
+			height: 70px;	
+		}
+		.container{
+  			display: grid;
+  			grid-template-columns: auto auto auto auto;
+  			gap: 10px;
+  			padding: 10px;
+  			align-content: center;
+		}
+		.grid-container{
+  			display: grid;
+  			grid-template-columns:  repeat(5, 1fr);
+  			gap: 10px;
+  			padding: 10px;
+  			align-content: center;
+  			
+		}
+		.ul{
+			margin-left: 35%;
+			margin-right: 20%;
+		}
+		
+	</style>
 </head>
 <body>
-	<img src="./media/profile.jpeg" width="200px" height="200px">
-	<h1>Álvaro Gómez</h1>
-	    <h2>Perfil</h2>
-            <h4>Descripción:</h4>
-                <p>Soy una persona dedicada y entregada en cada decisión que toma, aveces arriesgado, otras veces precavido.<br>
+	<div class="bloque"></div>
+	<div>
+	<img class="img-profile"src="./media/profile.jpeg">
+	<h1 class="titulo">Álvaro Gómez</h1>
+	    <h2 class="h2">Perfil</h2>
+            <h4 class="h4">Descripción:</h4>
+                <p class="p">Soy una persona dedicada y entregada en cada decisión que toma, aveces arriesgado, otras veces precavido.<br>
                     Me describo como una persona con alto sentido de pertenencia.
                 </p>
-            <h4>Aspiración:</h4>
-	            <p>Mi aspiración de vida es seguir teniendo el amor al aprendizaje, serguir desarrollando habilidades de forma teorica y practica mediante las vivencias e inversiones que pueda hacerme.<br>
+            <h4 class="h4">Aspiración:</h4>
+	            <p class="p">Mi aspiración de vida es seguir teniendo el amor al aprendizaje, serguir desarrollando habilidades de forma teorica y practica mediante las vivencias e inversiones que pueda hacerme.<br>
 		            En el campo profesional mi aspiración es poder aportar a la sociedad dando soluciones tecnologicas utilizando mis habilidades y conocimientos en programación.
 	            </p>
-        <h2>Hobbies</h2>
-            <ul>
+        
+        <h2 class="h2">Herramientas trabajadas</h2>
+           
+   	        <div class="grid-container">
+  				<div>HTML</div>
+ 				 <div>CSS</div>
+ 				 <div>JAVASCRIPT</div>  
+ 				 <div>BOOTSTRAP</div>
+ 				 <div>WORDPRESS</div>
+ 				 <div><img class="png"src="./media/html.png"></div>
+ 				 <div><img class="png"src="./media/css.png"></div>
+  			   	<div><img class="png"src="./media/js.png"></div>
+  			   	<div><img class="png"src="./media/bootstrap.png"></div>
+  			   	<div><img class="png"src="./media/wordpress.png"></div>
+			</div>
+    	<h2 class="h2">Hobbies</h2>
+            <ul class="ul">
 		        <li>Músico</li>
 		        <li>Developer en proceso</li>
 		        <li>Amante de la fotografía</li>
 		        <li>Catador de hamburguesas</li>
 	        </ul>
-        <h2>Herramientas trabajadas</h2>
-            <ul>
-		        <li>HTML</li>
-		        <li>CSS</li>
-                <li>JAVASCRIPT</li>
-		        <li>BOOTSTRAP</li>
-		        <li>WORDPRESS</li>
-	        </ul>
-    
-	    <h2>Redes sociales</h2>
-	        <a href="https://twitter.com/alvarogosier"><img src="./media/twitter.png" width="60px" height="60px"></a>
-	        <a href="https://facebook.com/alvarogosier"><img src="./media/facebook.png" width="60px" height="60px"></a>
-	        <a href="https://instagram.com/alvarogosier"><img src="./media/instagram.png" width="60px" height="60px"></a>
-	        <a href="https://github.com/alvarog0218"><img src="./media/github.png" width="60px" height="60px"></a>
+	    <h2 class="h2">Redes sociales</h2>
+	    		    			
+	    		<div class="container">
+					<div><a class="ico" href="https://twitter.com/alvarogosier"><img src="./media/twitter.png" ></a></div>
+  					<div><a class="ico"href="https://facebook.com/alvarogosier"><img src="./media/facebook.png" ></a></div>
+  					<div><a class="ico"href="https://instagram.com/alvarogosier"><img src="./media/instagram.png" ></a></div>  
+  					<div><a class="ico"href="https://github.com/alvarog0218"><img src="./media/github.png" ></a></div>
+				</div>
+	    </div>
+	    <div class="bloque"></div>	
+	        
 </body>
 </html>
+
